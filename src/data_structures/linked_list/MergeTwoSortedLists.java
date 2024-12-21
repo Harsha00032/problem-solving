@@ -2,14 +2,13 @@ package data_structures.linked_list;
 
 public class MergeTwoSortedLists {
 
-
-    private static void mergeTwoSortedLists(Node l1, Node l2) {
+    private static Node mergeTwoSortedLists(Node l1, Node l2) {
 
         Node current = new Node(0);
 
         while (l1 != null && l2 != null){
 
-            if (l1.data < l2.data){
+            if (l1.data <= l2.data){
                 current.next = l1;
                 l1 = l1.next;
             } else {
@@ -24,11 +23,13 @@ public class MergeTwoSortedLists {
         } else {
             current.next = l2;
         }
+
+        return current.next;
     }
 
     public static void main(String[] args) {
-        Node l1 = LinkedList.buildListFromArray(new int[]{1, 2, 4});
-        Node l2 = LinkedList.buildListFromArray(new int[]{1, 3, 4});
+        Node l1 = LinkedList.buildListFromArray(new int[]{7, 12});
+        Node l2 = LinkedList.buildListFromArray(new int[]{7, 13});
 
         System.out.println("The given linked list 1: ");
         LinkedList.printList(l1); // Output: 1 -> 2 -> 4 -> NULL
@@ -36,7 +37,7 @@ public class MergeTwoSortedLists {
         System.out.println("The given linked list 2: ");
         LinkedList.printList(l2); // Output: 1 -> 3 -> 4 -> NULL
 
-        mergeTwoSortedLists(l1, l2);
+       Node mergedHead = mergeTwoSortedLists(l1, l2);
 
         System.out.println("After merging the given Linked List:");
         LinkedList.printList(l1); // Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> NULL
