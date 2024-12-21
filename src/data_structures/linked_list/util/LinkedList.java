@@ -1,8 +1,6 @@
-package data_structures.linked_list;
+package data_structures.linked_list.util;
 
 public class LinkedList {
-
-    private static Node head;
 
     public static void printList(Node head){
         Node temp = head;
@@ -19,7 +17,7 @@ public class LinkedList {
             return null; // Return null for an empty array
         }
 
-        head = new Node(arr[0]); // Create the head node
+        Node head = new Node(arr[0]); // Create the head node
         Node current = head;
 
         for (int i = 1; i < arr.length; i++) {

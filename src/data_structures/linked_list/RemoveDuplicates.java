@@ -1,5 +1,8 @@
 package data_structures.linked_list;
 
+import data_structures.linked_list.util.LinkedList;
+import data_structures.linked_list.util.Node;
+
 /*
 Given a sorted linked list, remove all the duplicate elements to leave only distinct numbers.
 The linked list should remain sorted, and the modified list should be returned.

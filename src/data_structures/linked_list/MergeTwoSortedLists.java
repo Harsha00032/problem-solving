@@ -1,5 +1,8 @@
 package data_structures.linked_list;
 
+import data_structures.linked_list.util.LinkedList;
+import data_structures.linked_list.util.Node;
+
 public class MergeTwoSortedLists {
 
     private static Node mergeTwoSortedLists(Node l1, Node l2) {

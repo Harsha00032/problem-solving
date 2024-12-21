@@ -1,5 +1,8 @@
 package data_structures.linked_list;
 
+import data_structures.linked_list.util.LinkedList;
+import data_structures.linked_list.util.Node;
+
 public class ReverseLinkedList {
 
     private static Node reverseLinkedList(Node head) {
