@@ -1,4 +1,4 @@
-package data_structures;
+package data_structures.array;
 
 /*
 Given an integer array nums, find three numbers whose product is maximum and return the maximum product.
