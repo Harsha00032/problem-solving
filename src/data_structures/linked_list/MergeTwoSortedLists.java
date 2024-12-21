@@ -5,10 +5,11 @@ public class MergeTwoSortedLists {
     private static Node mergeTwoSortedLists(Node l1, Node l2) {
 
         Node current = new Node(0);
+        Node dummy = current;
 
         while (l1 != null && l2 != null){
 
-            if (l1.data <= l2.data){
+            if (l1.data < l2.data){
                 current.next = l1;
                 l1 = l1.next;
             } else {
@@ -24,7 +25,7 @@ public class MergeTwoSortedLists {
             current.next = l2;
         }
 
-        return current.next;
+        return dummy.next;
     }
 
     public static void main(String[] args) {
@@ -40,7 +41,7 @@ public class MergeTwoSortedLists {
        Node mergedHead = mergeTwoSortedLists(l1, l2);
 
         System.out.println("After merging the given Linked List:");
-        LinkedList.printList(l1); // Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> NULL
+        LinkedList.printList(mergedHead); // Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> NULL
     }
 
 }
