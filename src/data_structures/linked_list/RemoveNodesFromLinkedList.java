@@ -15,9 +15,9 @@ Explanation: The nodes that should be removed are 5, 2 and 3.
  */
 public class RemoveNodesFromLinkedList {
 
-    private static Node removeNodes(Node head){
+    private static Node removeNodes(Node head) {
 
-        if (head ==  null || head.next == null)
+        if (head == null || head.next == null)
             return head;
 
         Node prev = null;
@@ -56,7 +56,7 @@ public class RemoveNodesFromLinkedList {
     }
 
     public static void main(String[] args) {
-        Node head = LinkedList.buildListFromArray(new int[]{15,2,13,3,8, 18});
+        Node head = LinkedList.buildListFromArray(new int[]{15, 2, 13, 3, 8, 18});
         System.out.println("The given linked list: ");
         LinkedList.printList(head);
         Node newHead = removeNodes(head);
