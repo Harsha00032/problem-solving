@@ -13,15 +13,16 @@ public class LengthOfLongestSubstring {
 
     private static int lengthOfLongestSubstring(String s) {
 
-        int start = 0;
-        int end = 0;
-        int maxLen = 0;
+        int start = 0; // start point of the sliding window
+        int end = 0; // end point of the sliding window
+        int maxLen = 0; // track max length
         HashSet<Character> characterHashSet = new HashSet<>();
 
         while (end < s.length()) {
 
             char ch = s.charAt(end);
 
+            // shrink window when there is a duplicate
             if (characterHashSet.contains(ch)) {
                 characterHashSet.remove(s.charAt(start));
                 start++;
