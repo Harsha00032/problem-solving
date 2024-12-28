@@ -36,22 +36,20 @@ public class MinimumWindowSort {
             subArrayMax = Math.max(nums[i], subArrayMax);
         }
 
-        while (left > 0 && nums[left] > subArrayMin) {
+        while (left >= 0 && nums[left] > subArrayMin) {
             left--;
         }
 
-        while (right < n-1 && nums[right] < subArrayMax) {
+        while (right <= n-1 && nums[right] < subArrayMax) {
             right++;
         }
 
-        System.out.println("left and right "+ left +", " +right);
-
-        return right - left + 1;
+        return right - (left + 1);
 
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3,4,5,-1};
+        int[] nums = {2,6,4,0,10,9,15};
         System.out.println("The minimumWindowSort is " + minimumWindowSort(nums));
     }
 }
