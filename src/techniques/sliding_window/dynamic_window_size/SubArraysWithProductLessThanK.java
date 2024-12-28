@@ -9,7 +9,7 @@ Explanation: There are six contiguous subarrays whose product is less than the t
  */
 public class SubArraysWithProductLessThanK {
 
-    private static int subArraysWithProductLessThanK(int[] nums, int target)  {
+    private static int subArraysWithProductLessThanK(int[] nums, int target) {
 
         int start = 0;
         int end = 0;
@@ -20,12 +20,14 @@ public class SubArraysWithProductLessThanK {
             product *= nums[end];
 
             //shrink the window till your product is less than the target
-            while (product >=target && start <= end){
+            while (product >= target && start <= end) {
                 product /= nums[start];
                 start++;
             }
 
-            count += end-start+1;
+            // formula is based on the fact that add a new element in the subarray would potentially
+            // add eligible subArrays of it's length
+            count += end - start + 1;
             end++;
         }
 
@@ -34,7 +36,7 @@ public class SubArraysWithProductLessThanK {
 
     public static void main(String[] args) {
         int[] nums = {2, 5, 3, 10};
-        System.out.println("The number of sub arrays with count less than target => "+ subArraysWithProductLessThanK(nums, 30));
+        System.out.println("The number of sub arrays with count less than target => " + subArraysWithProductLessThanK(nums, 30));
 
     }
 
