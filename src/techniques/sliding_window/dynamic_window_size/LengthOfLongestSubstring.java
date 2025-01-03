@@ -19,24 +19,23 @@ public class LengthOfLongestSubstring {
         HashSet<Character> characterHashSet = new HashSet<>();
 
         while (end < s.length()) {
-
             char ch = s.charAt(end);
-
             // shrink window when there is a duplicate
             if (characterHashSet.contains(ch)) {
                 characterHashSet.remove(s.charAt(start));
                 start++;
             } else {
                 characterHashSet.add(ch);
-                maxLen = Math.max(maxLen, end - start +1);
+                maxLen = Math.max(maxLen, end - start + 1);
                 end++;
             }
 
         }
         return maxLen;
     }
+
     public static void main(String[] args) {
         String str = "bbaa";
-        System.out.println("Length of the longest sub string => "+ lengthOfLongestSubstring(str));
+        System.out.println("Length of the longest sub string => " + lengthOfLongestSubstring(str));
     }
 }
