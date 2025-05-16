@@ -30,7 +30,7 @@ public class DutchFlagProblem {
     }
 
     public static void main(String[] args) {
-        int[] nums = {0, 1,1,0};
+        int[] nums = {0, 1, 1, 0, 2, 2, 1, 0, 0, 2};
         System.out.println("Before sorting: ");
         printArray(nums);
 

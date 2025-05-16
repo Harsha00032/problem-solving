@@ -36,10 +36,12 @@ public class MinimumWindowSort {
             subArrayMax = Math.max(nums[i], subArrayMax);
         }
 
+        // expand left
         while (left >= 0 && nums[left] > subArrayMin) {
             left--;
         }
 
+        //expand right
         while (right <= n-1 && nums[right] < subArrayMax) {
             right++;
         }
