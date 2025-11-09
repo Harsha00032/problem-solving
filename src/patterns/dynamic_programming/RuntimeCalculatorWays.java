@@ -1,4 +1,4 @@
-package paradigms.dynamic_programming;
+package patterns.dynamic_programming;
 
 public class RuntimeCalculatorWays {
 

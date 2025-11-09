@@ -1,4 +1,4 @@
-package paradigms.dynamic_programming;
+package patterns.dynamic_programming;
 
 /**
  * Utility class demonstrating several DP approaches to the Subset Sum problem.
