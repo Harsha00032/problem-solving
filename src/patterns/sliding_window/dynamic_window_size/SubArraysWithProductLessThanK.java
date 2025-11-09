@@ -1,4 +1,4 @@
-package techniques.sliding_window.dynamic_window_size;
+package patterns.sliding_window.dynamic_window_size;
 
 /*
 Given an array with positive numbers and a positive target number, find all of its contiguous subarrays whose product is less than the target number.

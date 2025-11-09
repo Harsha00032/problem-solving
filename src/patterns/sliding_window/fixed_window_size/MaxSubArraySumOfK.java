@@ -1,4 +1,4 @@
-package techniques.sliding_window.fixed_window_size;
+package patterns.sliding_window.fixed_window_size;
 
 /*
 Find the maximum sum of a contiguous subarray of a fixed size 𝐾

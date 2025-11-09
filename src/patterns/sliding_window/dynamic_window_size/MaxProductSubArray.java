@@ -1,4 +1,4 @@
-package techniques.sliding_window.dynamic_window_size;
+package patterns.sliding_window.dynamic_window_size;
 
 /*
 Given an integer array nums, find the contiguous subArray within the array (containing at least one number) which has the largest product and return its product.

@@ -1,4 +1,4 @@
-package techniques.recursion;
+package patterns.recursion;
 
 public class DecimalToBinary {
 

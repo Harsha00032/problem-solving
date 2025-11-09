@@ -1,4 +1,4 @@
-package techniques.two_pointers.fast_and_slow;
+package patterns.two_pointers.fast_and_slow;
 
 
 import data_structures.linked_list.util.LinkedList;

@@ -1,4 +1,4 @@
-package techniques.sliding_window.dynamic_window_size;
+package patterns.sliding_window.dynamic_window_size;
 
 /*
 Given an array of positive integers nums and a positive integer target, return the minimal length of a

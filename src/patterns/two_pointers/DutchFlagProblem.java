@@ -1,4 +1,4 @@
-package techniques.two_pointers;
+package patterns.two_pointers;
 
 /*
 The Dutch National Flag problem, proposed by Edsger Dijkstra, involves sorting an array of 0s, 1s, and 2s

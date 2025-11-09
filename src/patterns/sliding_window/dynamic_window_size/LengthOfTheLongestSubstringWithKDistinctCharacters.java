@@ -1,7 +1,6 @@
-package techniques.sliding_window.dynamic_window_size;
+package patterns.sliding_window.dynamic_window_size;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 /*
 Given a string, find the length of the longest substring in it with no more than K distinct characters.

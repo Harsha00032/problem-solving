@@ -1,4 +1,4 @@
-package techniques.sliding_window.dynamic_window_size;
+package patterns.sliding_window.dynamic_window_size;
 
 import java.util.HashSet;
 

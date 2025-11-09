@@ -1,4 +1,4 @@
-package techniques.math;
+package patterns.math;
 
 /*
 Given an integer n, return the nth digit of the infinite integer sequence
