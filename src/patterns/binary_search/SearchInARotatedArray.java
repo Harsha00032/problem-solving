@@ -1,4 +1,4 @@
-package algorithms.binary_search;
+package patterns.binary_search;
 
 /* Dec - 18 Revise on Dec 21st and On Dec 28th
 Problem: You are given a sorted array that has been rotated at an unknown pivot. Find the index of a given target element.

@@ -9,29 +9,40 @@ nums = [3, 2, 3]
 Output:
 3
  */
+
+/**
+ * Finds the majority element (appears > n/2 times) using Moore's Voting Algorithm.
+ * The algorithm first finds a candidate by canceling out pairs of different elements,
+ * then verifies the candidate by counting its occurrences.
+ */
 public class MajorityElement {
 
     // Applying Moore's Voting Algorithm - Each element carries a vote and vote itself as a possible candidate
+    /**
+     * Returns the majority element if present; otherwise -1.
+     * @param nums input array (may contain a guaranteed majority element)
+     */
     private static int majorityElement(int[] nums) {
 
+        // defensive null check
         if (nums == null)
             return -1;
 
-        int count = 0;
-        int candidate = 0;
+        int count = 0;      // vote counter
+        int candidate = 0;  // current candidate for majority
 
-        // Identify the possible candidate
+        // Phase 1: find a candidate by pairing different elements (Moore's voting)
         for (int num : nums) {
             if (count == 0) {
-                candidate = num;
+                candidate = num; // pick new candidate when counter drops to zero
                 count = 1;
             } else if (candidate == num)
-                count++;
+                count++;         // same as candidate -> increment votes
             else
-                count--;
+                count--;         // different -> cancel one vote
         }
 
-        // Verify the candidate
+        // Phase 2: verify the candidate actually appears > n/2 times
         count = 0;
         for (int num : nums) {
             if (num == candidate)
