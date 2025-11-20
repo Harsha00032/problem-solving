@@ -4,7 +4,6 @@ package algorithms;
  * Problem: Given an integer array of size n, find the majority element.
  * The majority element is the element that appears more than n/2 times.
  * It is assumed that the array always contains a majority element.
- *
  * This class implements Moore's Voting Algorithm which runs in O(n) time
  * and O(1) additional space: first find a candidate by canceling out
  * pairs of different elements, then verify the candidate.
