@@ -3,8 +3,8 @@ package algorithms.sort;
 import java.util.Arrays;
 
 /*
-Implementation of Insertion Sort algorithm in Java.
-
+Sorts by iterating through the elements from the unsorted part and
+inserting an element in it's right position in the current sorted path in each iteration
  */
 public class InsertionSort {
 
